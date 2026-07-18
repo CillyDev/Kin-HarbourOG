@@ -13,6 +13,7 @@ import { ChevronDown } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import SidePannelButton from "./custom_components/SidePannelButton";
 
 
 export function AppSidebar() {
@@ -21,11 +22,11 @@ export function AppSidebar() {
       <SidebarHeader>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <SidePannelButton>
               <Image src="/images/raven.png" alt="AccountInfo" width={30} height={30} />
               Cillian
               <ChevronDown className="ml-auto" />
-            </Button>
+            </SidePannelButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuLabel> My Account  </DropdownMenuLabel>
@@ -39,16 +40,16 @@ export function AppSidebar() {
           </DropdownMenuContent>
         </DropdownMenu>
         <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="w-full">
-          <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+          <SidePannelButton>
             <Image src="/images/writing_3883016.png" alt="homeIcon" width={30} height={30} />
             Overview
-          </Button>
+          </SidePannelButton>
         </Link>
         <Link href="/highlights">
-          <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+          <SidePannelButton>
             <Image src="/images/spotlight_8560250.png" alt="showHighlights" width={30} height={30} />
             Highlights
-          </Button>
+          </SidePannelButton>
         </Link>
       </SidebarHeader>
       <span className="flex justify-center">
@@ -60,28 +61,28 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup>
           <Link href="/music-lounge">
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <SidePannelButton>
               <Image src="/images/vinyl-record_2987300.png" alt="homeIcon" width={30} height={30} />
               Music Lounge
-            </Button>
+            </SidePannelButton>
           </Link>
           <Link href="/music-lounge">
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <SidePannelButton>
               <Image src="/images/campfire_9069797.png" alt="homeIcon" width={30} height={30} />
               Kinship
-            </Button>
+            </SidePannelButton>
           </Link>
           <Link href="/music-lounge">
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <SidePannelButton>
               <Image src="/images/treasure_3016780.png" alt="homeIcon" width={30} height={30} />
               Shared Secrets 
-            </Button>
+            </SidePannelButton>
           </Link>
           <Link href="/music-lounge">
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <SidePannelButton>
               <Image src="/images/scroll_4001989.png" alt="homeIcon" width={30} height={30} />
               Quest Board
-            </Button>
+            </SidePannelButton>
           </Link>
 
         </SidebarGroup>
