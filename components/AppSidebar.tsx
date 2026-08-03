@@ -7,6 +7,7 @@ import {
   SidebarHeader
 } from "@/components/ui/sidebar";
 import { Button } from "./ui/button";
+import { CiSettings } from "react-icons/ci";
 import Image from 'next/image';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
@@ -29,11 +30,11 @@ export function AppSidebar() {
             </SidePannelButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel> My Account  </DropdownMenuLabel>
-            <DropdownMenuItem className="hover:text-hovered-text text-default-text" variant="default">
+            <DropdownMenuLabel className="rounded-md h-[3em] hover:bg-hovered-button text-hovered-text text-[0.8em]"> My Account  </DropdownMenuLabel>
+            <DropdownMenuItem className="rounded-md h-[3em] hover:bg-hovered-button text-hovered-text text-[0.8em]">
               Preferences
             </DropdownMenuItem>
-            <DropdownMenuItem className="hover:text-hovered-text text-default-text">
+            <DropdownMenuItem className="rounded-md h-[3em] hover:bg-hovered-button text-hovered-text text-[0.8em]">
               Invite members
             </DropdownMenuItem>
             <DropdownMenuSeparator />
@@ -66,19 +67,19 @@ export function AppSidebar() {
               Music Lounge
             </SidePannelButton>
           </Link>
-          <Link href="/music-lounge">
+          <Link href="/kinship">
             <SidePannelButton>
               <Image src="/images/campfire_9069797.png" alt="homeIcon" width={30} height={30} />
               Kinship
             </SidePannelButton>
           </Link>
-          <Link href="/music-lounge">
+          <Link href="/shared_secrets">
             <SidePannelButton>
               <Image src="/images/treasure_3016780.png" alt="homeIcon" width={30} height={30} />
               Shared Secrets 
             </SidePannelButton>
           </Link>
-          <Link href="/music-lounge">
+          <Link href="/quest_board">
             <SidePannelButton>
               <Image src="/images/scroll_4001989.png" alt="homeIcon" width={30} height={30} />
               Quest Board
